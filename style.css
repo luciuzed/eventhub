@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafbfc;
+    color: #212529;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-content {
+        flex: 1;
+        padding-right: 2rem;
+    }
+    .hero-image-wrapper {
+        flex: 1;
+    }
+}
+
+.custom-banner-img {
+    max-height: 350px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.workshop-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.workshop-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.workshop-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08)!important;
+}
+
+.facility-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.facility-card {
+    flex: 1 1 200px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.facility-card:hover {
+    transform: translateY(-3px);
+}
+
+.facility-badge {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #f1f3f5;
+    color: #212529;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 50%;
+}
